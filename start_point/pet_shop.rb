@@ -164,3 +164,21 @@ end
 def add_pet_to_customer(person, new_pets_added)
   person[:pets].push(new_pets_added)
 end
+
+
+
+def customer_can_afford_pet(person, new_pets_added)
+  if person[:cash] >= new_pets_added[:price]
+    return true
+  end
+  return false
+end
+#cheating?! do we need else here... isnt it just returnng false cos we asked it to so of course its right
+
+
+def customer_can_afford_pet(person, new_pets_added)
+  if person[:cash] >= new_pets_added[:price]
+    return true
+  end
+  return false
+end
