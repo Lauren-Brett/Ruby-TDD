@@ -52,27 +52,14 @@ end
 
 
 def find_pet_by_name(shop, name_of_pet)
-  # specific_name = {}
     for whole_animal in shop[:pets]
       if whole_animal[:name] == name_of_pet
-        # whole_animal[:name] = name_of_pet
-      # return specific_name
       return whole_animal
       end
     end
     return nil
 end
 
-# def find_pet_by_name(shop, name_of_pet)
-#   specific_name = {}
-#     for animal in shop[:pets]
-#       if animal[:name] == name_of_pet
-#         specific_name[:name] = name_of_pet
-#       return specific_name
-#       end
-#     end
-#     return nil
-# end
 
 
 def remove_pet_by_name(shop, remove_name)
@@ -86,33 +73,7 @@ def remove_pet_by_name(shop, remove_name)
 
 
 
- #####person[:friends].delete(old_friend)
-
-   ## for thing in shop[:pets]
-  ###   return thing[:name].delete(remove_name)
-  ### end
-
-  ### end_result = []
-  ### for animal in shop[:pets]
-  ###   for thing in animal
-  ###     if animal[:name] == remove_name.delete
-  ###     return end_result
-  ###     end
-  ###   end
-  ### end
-
-###   find_pet_by_name(shop, remove_name)
-###     return nil
-### end
-
-#########################
-
-
-
-
-
-
-
+  ###
 
 
 # ADD EXISTING HASH INTO ARRAY
@@ -170,5 +131,6 @@ def sell_pet_to_customer(shop, animal, person)
    add_pet_to_customer(person, animal)
    increase_pets_sold(shop, 1)
    shop[:admin][:total_cash] += animal[:price]
-  # shop[:pets][:admin] += 1
 end
+
+# shop[:pets][:admin] += 1
